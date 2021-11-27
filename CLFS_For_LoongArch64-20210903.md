@@ -1783,7 +1783,7 @@ pushd ${BUILDDIR}/e2fsprogs-1.46.2
 	pushd build
 		../configure --prefix=/usr --libdir=/usr/lib64 --build=${CROSS_HOST} \
 		             --host=${CROSS_TARGET} --sysconfdir=/etc \
-		             --enable-elf-shlibs--disable-libblkid \
+		             --enable-elf-shlibs --disable-libblkid \
 		             --disable-libuuid --disable-uuidd --disable-fsck
 		make 
 		make DESTDIR=${SYSDIR}/sysroot install

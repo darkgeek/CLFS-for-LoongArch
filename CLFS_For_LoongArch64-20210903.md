@@ -1576,7 +1576,7 @@ pushd ${BUILDDIR}/cmake-3.21.1
     pushd build
         cmake -DCMAKE_CXX_COMPILER="${CROSS_TARGET}-g++" -DCMAKE_C_COMPILER="${CROSS_TARGET}-gcc" \
               -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_DOC_DIR=/share/doc/cmake-3.21 \
-              -DOPENSSL_ROOT_DIR=${SYSDIR}/sysroot/usr -DCMAKE_BUILD_TYPE=RELEASE ../
+              -DOPENSSL_ROOT_DIR=${SYSDIR}/sysroot/usr -DCMAKE_BUILD_TYPE=RELEASE -DOPENSSL_CRYPTO_LIBRARY=$SYSDIR/sysroot/usr/lib64/libcrypto.so -DOPENSSL_SSL_LIBRARY=$SYSDIR/sysroot/usr/lib64/libssl.so ../
         sed -i "/P cmake_install.cmake/s@\tbin/cmake@\t/bin/cmake@g" Makefile
         make
         make DESTDIR=${SYSDIR}/sysroot install

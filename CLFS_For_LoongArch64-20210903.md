@@ -1082,7 +1082,7 @@ popd
 
 #### Attr
 ```sh
-tar xvf ${DOWNLOADDIR}/attr-2.5.1.tar.xz -C ${BUILDDIR}
+tar xvf ${DOWNLOADDIR}/attr-2.5.1.tar.gz -C ${BUILDDIR}
 pushd ${BUILDDIR}/attr-2.5.1
 	./configure --prefix=/usr --libdir=/usr/lib64 --build=${CROSS_HOST} \
 	            --host=${CROSS_TARGET} --disable-static --sysconfdir=/etc
@@ -1296,8 +1296,8 @@ popd
 
 #### Expat
 ```sh
-tar xvf ${DOWNLOADDIR}/expat-2.3.0.tar.xz -C ${BUILDDIR}
-pushd ${BUILDDIR}/expat-2.3.0
+tar xvf ${DOWNLOADDIR}/expat-2.4.1.tar.xz -C ${BUILDDIR}
+pushd ${BUILDDIR}/expat-2.4.1
 	./configure --prefix=/usr --libdir=/usr/lib64 --build=${CROSS_HOST} \
 	            --host=${CROSS_TARGET} 
 	make
@@ -1332,8 +1332,8 @@ popd
 
 #### Kmod
 ```sh
-tar xvf ${DOWNLOADDIR}/kmod-28.tar.xz -C ${BUILDDIR}
-pushd ${BUILDDIR}/kmod-28
+tar xvf ${DOWNLOADDIR}/kmod-29.tar.xz -C ${BUILDDIR}
+pushd ${BUILDDIR}/kmod-29
 	rm $(dirname $(find -name "config.sub"))/config.{sub,guess}
 	automake --add-missing
 	./configure --prefix=/usr --libdir=/usr/lib64 --bindir=/bin \
@@ -1467,8 +1467,8 @@ popd
 
 #### Less
 ```sh
-tar xvf ${DOWNLOADDIR}/less-581.2.tar.gz -C ${BUILDDIR}
-pushd ${BUILDDIR}/less-581.2
+tar xvf ${DOWNLOADDIR}/less-581.tar.gz -C ${BUILDDIR}
+pushd ${BUILDDIR}/less-581
 	./configure --prefix=/usr --sysconfdir=/etc --build=${CROSS_HOST} --host=${CROSS_TARGET}
 	make
 	make DESTDIR=${SYSDIR}/sysroot install

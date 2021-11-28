@@ -372,6 +372,7 @@ pushd ${SYSDIR}/downloads
 　　https://github.com/sunhaiyong1978/CLFS-for-LoongArch/blob/main/patches/nspr-4.32-add-loongarch64.patch  
 　　https://github.com/sunhaiyong1978/CLFS-for-LoongArch/blob/main/patches/stack-direction-add-loongarch.patch  
 　　https://github.com/sunhaiyong1978/CLFS-for-LoongArch/blob/main/patches/systemd-249-add-loongarch64.patch  
+　　https://github.com/sunhaiyong1978/CLFS-for-LoongArch/blob/main/patches/systemd-249-fix-build-error.patch  
 　　https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.37-apng.patch.gz   
 　　https://www.linuxfromscratch.org/patches/blfs/svn/wireless_tools-29-fix_iwlist_scanning-1.patch  
 
@@ -1692,6 +1693,7 @@ popd
 tar xvf ${DOWNLOADDIR}/systemd-249.tar.gz -C ${BUILDDIR}
 pushd ${BUILDDIR}/systemd-249
 	patch -Np1 -i ${DOWNLOADDIR}/systemd-249-add-loongarch64.patch
+    patch -Np0 -i ${DOWNLOADDIR}/systemd-249-fix-build-error.patch
 	pushd src/basic
         python3 missing_syscalls.py missing_syscall_def.h $(ls syscalls-*.txt)
 	popd

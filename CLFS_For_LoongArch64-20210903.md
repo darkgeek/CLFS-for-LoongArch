@@ -227,7 +227,7 @@ pushd ${SYSDIR}/downloads
 　　**Automake:** https://ftp.gnu.org/gnu/automake/automake-1.16.3.tar.xz  
 　　**Bash:** https://ftp.gnu.org/gnu/bash/bash-5.1.8.tar.gz  
 　　**BC:** https://github.com/gavinhoward/bc/releases/download/4.0.2/bc-4.0.2.tar.xz  
-　　**Binutils:** ```https://github.com/loongarch/binutils-gdb.git  分支名“loongarch/upstream_v6_a1d65b3”```  
+　　**Binutils:** ```https://github.com/loongson/binutils-gdb  分支名“loongarch-2_37”```  
 　　**Bison:** https://ftp.gnu.org/gnu/bison/bison-3.7.6.tar.xz  
 　　**Boost:** https://boostorg.jfrog.io/artifactory/main/release/1.77.0/source/boost_1_77_0.tar.bz2  
 　　**Bzip2:** https://www.sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz  
@@ -433,9 +433,9 @@ popd
 　　Binutils需要进行扩充式移植的软件包，在没有软件官方支持的情况下需要专门的获取代码的方式进行，以下是获取方式：
 
 ```sh
-git clone https://github.com/loongson/binutils-gdb.git -b loongarch/upstream_v6_a1d65b3 --depth 1
+git clone https://github.com/loongson/binutils-gdb.git -b loongarch-2_37 --depth 1
 pushd binutils-gdb
-    git archive --format=tar --output ../binutils-2.37.tar "loongarch/upstream_v6_a1d65b3"
+    git archive --format=tar --output ../binutils-2.37.tar "loongarch-2_37"
 popd
 mkdir binutils-2.37
 pushd binutils-2.37

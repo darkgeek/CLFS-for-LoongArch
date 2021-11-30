@@ -367,7 +367,8 @@ pushd ${SYSDIR}/downloads
 　　https://github.com/sunhaiyong1978/CLFS-for-LoongArch/blob/main/patches/grub-2.06-fix-initrd.patch  
 　　https://github.com/sunhaiyong1978/CLFS-for-LoongArch/blob/main/patches/icu4c-69-add-loongarch.patch  
 　　https://github.com/sunhaiyong1978/CLFS-for-LoongArch/blob/main/patches/kbd-2.4.0-backspace-1.patch  
-　　https://github.com/sunhaiyong1978/CLFS-for-LoongArch/blob/main/patches/libffi-3.3-add-loongarch.patch  
+　　https://github.com/sunhaiyong1978/CLFS-for-LoongArch/blob/main/patches/libffi-update-config.-guess-sub.patch
+　　https://github.com/sunhaiyong1978/CLFS-for-LoongArch/blob/main/patches/libffi-New-LoongArch-port.patch
 　　https://github.com/sunhaiyong1978/CLFS-for-LoongArch/blob/main/patches/linux-5-loongarch-rearrange_ucontext_layout.patch  
 　　https://github.com/sunhaiyong1978/CLFS-for-LoongArch/blob/main/patches/nspr-4.32-add-loongarch64.patch  
 　　https://github.com/sunhaiyong1978/CLFS-for-LoongArch/blob/main/patches/stack-direction-add-loongarch.patch  
@@ -1368,7 +1369,8 @@ popd
 ```sh
 tar xvf ${DOWNLOADDIR}/libffi-3.3.tar.gz -C ${BUILDDIR}
 pushd ${BUILDDIR}/libffi-3.3
-	patch -Np1 -i ${DOWNLOADDIR}/libffi-3.3-add-loongarch.patch
+	patch -Np1 -i ${DOWNLOADDIR}/libffi-New-LoongArch-port.patch
+	patch -Np1 -i ${DOWNLOADDIR}/libffi-update-config.-guess-sub.patch
 	aclocal
 	automake -fi
 	./configure --prefix=/usr --libdir=/usr/lib64 --build=${CROSS_HOST} \

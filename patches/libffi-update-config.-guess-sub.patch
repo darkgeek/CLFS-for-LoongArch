@@ -1,0 +1,22 @@
+--- a/config.guess	2021-11-30 16:36:10.912772496 +0000
++++ b/config.guess	2021-11-30 16:38:07.765078649 +0000
+@@ -979,6 +979,9 @@ EOF
+     m32r*:Linux:*:*)
+ 	echo ${UNAME_MACHINE}-unknown-linux-${LIBC}
+ 	exit ;;
++    loongarch64:Linux:*:* | loongarch64:Linux:*:* | loongarchx32:Linux:*:*)
++	echo "${UNAME_MACHINE}"-unknown-linux-"${LIBC}"
++	exit ;;	
+     m68*:Linux:*:*)
+ 	echo ${UNAME_MACHINE}-unknown-linux-${LIBC}
+ 	exit ;;
+--- a/config.sub	2021-11-30 16:35:59.904743655 +0000
++++ b/config.sub	2021-11-30 16:36:18.896793414 +0000
+@@ -266,6 +266,7 @@ case $basic_machine in
+ 	| i370 | i860 | i960 | ia16 | ia64 \
+ 	| ip2k | iq2000 \
+ 	| k1om \
++	| loongarch32 | loongarch64 | loongarchx32 \
+ 	| le32 | le64 \
+ 	| lm32 \
+ 	| m32c | m32r | m32rle | m68000 | m68k | m88k \

@@ -1842,7 +1842,7 @@ popd
 #### 安装证书
 ```sh
 tar xvf ${DOWNLOADDIR}/ssl-certs.tar.gz -C ${BUILDDIR}
-pushd certs
+pushd ${BUILDDIR}/certs
     cp -a * ${SYSDIR}/sysroot/etc/ssl/certs/
 popd
 ```

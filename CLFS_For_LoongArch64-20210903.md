@@ -842,8 +842,8 @@ popd
 
 ##### Iana-Etc
 ```sh
-tar xvf ${DOWNLOADDIR}/iana-etc-20210407.tar.gz -C ${BUILDDIR}
-pushd ${BUILDDIR}/iana-etc-20210407
+tar xvf ${DOWNLOADDIR}/iana-etc-20210526.tar.gz -C ${BUILDDIR}
+pushd ${BUILDDIR}/iana-etc-20210526
 	cp services protocols ${SYSDIR}/sysroot/etc
 popd
 ```

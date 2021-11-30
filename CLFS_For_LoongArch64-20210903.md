@@ -255,7 +255,7 @@ pushd ${SYSDIR}/downloads
 　　**Gettext:** https://ftp.gnu.org/gnu/gettext/gettext-0.21.tar.xz  
 　　**Git:** https://www.kernel.org/pub/software/scm/git/git-2.33.0.tar.xz  
 　　**Glib:** https://download.gnome.org/sources/glib/2.69/glib-2.69.2.tar.xz  
-　　**Glibc:** ```https://github.com/loongarch/glibc.git  分支名“loongarch_2_34_for_upstream”```  
+　　**Glibc:** ```https://github.com/loongson/glibc  分支名“loongarch_2_34_for_upstream”```  
 　　**Glibmm:** https://download.gnome.org/sources/glibmm/2.68/glibmm-2.68.1.tar.xz  
 　　**GMP:** https://ftp.gnu.org/gnu/gmp/gmp-6.2.1.tar.xz  
 　　**GnuTLS:** https://www.gnupg.org/ftp/gcrypt/gnutls/v3.7/gnutls-3.7.2.tar.xz  

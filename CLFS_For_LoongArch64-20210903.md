@@ -367,8 +367,8 @@ pushd ${SYSDIR}/downloads
 　　https://github.com/sunhaiyong1978/CLFS-for-LoongArch/blob/main/patches/grub-2.06-fix-initrd.patch  
 　　https://github.com/sunhaiyong1978/CLFS-for-LoongArch/blob/main/patches/icu4c-69-add-loongarch.patch  
 　　https://github.com/sunhaiyong1978/CLFS-for-LoongArch/blob/main/patches/kbd-2.4.0-backspace-1.patch  
-　　https://github.com/sunhaiyong1978/CLFS-for-LoongArch/blob/main/patches/libffi-update-config.-guess-sub.patch
-　　https://github.com/sunhaiyong1978/CLFS-for-LoongArch/blob/main/patches/libffi-New-LoongArch-port.patch
+　　https://github.com/sunhaiyong1978/CLFS-for-LoongArch/blob/main/patches/libffi-update-config.-guess-sub.patch  
+　　https://github.com/sunhaiyong1978/CLFS-for-LoongArch/blob/main/patches/libffi-New-LoongArch-port.patch  
 　　https://github.com/sunhaiyong1978/CLFS-for-LoongArch/blob/main/patches/linux-5-loongarch-rearrange_ucontext_layout.patch  
 　　https://github.com/sunhaiyong1978/CLFS-for-LoongArch/blob/main/patches/nspr-4.32-add-loongarch64.patch  
 　　https://github.com/sunhaiyong1978/CLFS-for-LoongArch/blob/main/patches/stack-direction-add-loongarch.patch  

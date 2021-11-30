@@ -250,7 +250,7 @@ pushd ${SYSDIR}/downloads
 　　**Freetype:** https://downloads.sourceforge.net/freetype/freetype-2.11.0.tar.xz  
 　　**Fribidi:** https://github.com/fribidi/fribidi/releases/download/v1.0.10/fribidi-1.0.10.tar.xz  
 　　**Gawk:** https://ftp.gnu.org/gnu/gawk/gawk-5.1.0.tar.xz  
-　　**GCC:** ```https://github.com/loongarch/gcc.git  分支名“loongarch_upstream”```  
+　　**GCC:** ```https://github.com/loongson/gcc  分支名“loongarch_upstream”```  
 　　**GDBM:** https://ftp.gnu.org/gnu/gdbm/gdbm-1.19.tar.gz  
 　　**Gettext:** https://ftp.gnu.org/gnu/gettext/gettext-0.21.tar.xz  
 　　**Git:** https://www.kernel.org/pub/software/scm/git/git-2.33.0.tar.xz  
